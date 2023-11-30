@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming TOP</title>
+    <style>
+      h1 {
+        background-color: rgb(185, 112, 112);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contacto</h1>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.mejoresresenas.es/juegos-pc?targetid=kwd-85212791127194:loc-170&matchtype=e&device=c&campaignid=413450487&creative=&adgroupid=1363395441420158&feeditemid=&loc_physical_ms=164580&loc_interest_ms=&network=o&devicemodel=&placement=&keyword=$comparativa%20juegos%20pc&target=&adposition=&trackid=es_all_top_bing&mId=H149003CQN&msclkid=253d20ccd30d11df9d6c45a4a01e5c18"
+              >TOP 10 JUEGOS PARA PC</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.elconfidencial.com/decompras/lifestyle/2021-04-13/10-mejores-juegos-de-nintendo-switch-consola_3029056/"
+              >TOP 10 JUEGOS PARA Nintendo Switch</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.mejoresresenas.es/juegos-de-ps5?targetid=dat-2336530928953151:aud-812432584:loc-170&matchtype=b&device=c&campaignid=424745423&creative=&adgroupid=1355699367696631&feeditemid=&loc_physical_ms=164580&loc_interest_ms=&network=o&devicemodel=&placement=&keyword=$videojuegos_categor%C3%ADas_playstation-5_0-50_standard&target=&adposition=&trackid=es_all_top_bing&mId=H149003CQN&msclkid=75aa9f8d46c31ef8e5f6fae535140d78"
+              >TOP 10 JUEGOS PARA PS5</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
+
+<form id="plataformaForm">
+  <label for="plataforma">Selecciona tu plataforma:</label>
+  <select id="plataforma" name="plataforma">
+    <option value="pc">PC</option>
+    <option value="nintendo">NINTENDO</option>
+    <option value="ps5">PS5</option>
+  </select>
+  <button type="button" onclick="redirigir()">Ir</button>
+</form>
+
+<script>
+  function redirigir() {
+    var plataformaSeleccionada = document.getElementById("plataforma").value;
+
+    switch (plataformaSeleccionada) {
+      case "pc":
+        window.location.href =
+          "https://www.mejoresresenas.es/juegos-pc?targetid=kwd-85212791127194:loc-170&matchtype=e&device=c&campaignid=413450487&creative=&adgroupid=1363395441420158&feeditemid=&loc_physical_ms=164580&loc_interest_ms=&network=o&devicemodel=&placement=&keyword=$comparativa%20juegos%20pc&target=&adposition=&trackid=es_all_top_bing&mId=H149003CQN&msclkid=253d20ccd30d11df9d6c45a4a01e5c18";
+        break;
+      case "nintendo":
+        window.location.href =
+          "https://www.elconfidencial.com/decompras/lifestyle/2021-04-13/10-mejores-juegos-de-nintendo-switch-consola_3029056/";
+        break;
+      case "ps5":
+        window.location.href =
+          "https://www.mejoresresenas.es/juegos-de-ps5?targetid=dat-2336530928953151:aud-812432584:loc-170&matchtype=b&device=c&campaignid=424745423&creative=&adgroupid=1355699367696631&feeditemid=&loc_physical_ms=164580&loc_interest_ms=&network=o&devicemodel=&placement=&keyword=$videojuegos_categor%C3%ADas_playstation-5_0-50_standard&target=&adposition=&trackid=es_all_top_bing&mId=H149003CQN&msclkid=75aa9f8d46c31ef8e5f6fae535140d78";
+        break;
+      default:
+        alert("Selecciona una plataforma válida");
+    }
+  }
+</script>
+<section>
+  <h2>Contacto</h2>
+  <p>Teléfono de Contacto: 666758180.</p>
+  <p>Email: dam@gamingtop.net</p>
+  <p>Dirección: Calle Cervantes, 742 Madrid 28003 Spain</p>
+  <!-- Otros elementos y contenido relacionado -->
+</section>
